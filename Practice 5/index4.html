@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Личный кабинет</title>
+        <link rel="icon" type="image/png" href="img/frog-icon.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- Шапка сайта -->
+        <header>
+            <nav class="headerMenu-wrapper">
+                <img class="logo-img" src="img/logo.png" alt="Логотип сайта">
+                <ul class="headerMenu">
+                    <input type="checkbox" id="checkbox_toggle">
+                    <label for="checkbox_toggle" class="hamburger"><span class="hamburger-line"></span></label>
+                    <div class="menu">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="index2.html">Виды лягушек</a></li>
+                        <li><a href="index3.html">Галерея</a></li>
+                        <li><a href="index4.html">Личный кабинет</a></li>
+                    </div>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Основной контент-->
+        <main class="index4Main">
+
+            <form class = "form_body" method="get">
+				<fieldset>
+					<legend class = "form_title">Регистрация</legend>
+
+                    <!-- AVATART -->
+                    <section class="userAvatar">
+                        <div class="userAvatar-wrapper">
+                            <img class="avatar" src="img/no_image.jpg" alt="no image">
+                            <div class="loadAvatar">
+                                <input class="fileInput" type="file" name="userPhoto">
+                                <button class="fileInput_button" type="button" name="button">Выбрать фото</button>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- NAME -->
+					<section class="form_item">
+						<label class="form_label">ФИО:</label>
+						<input class="form_input" required placeholder="Сидоров Сидр Сидорович" type="text" name="name">
+					</section>
+
+                    <!-- EMAIL -->
+                    <section class="form_item">
+                        <label class="form_label">Ваша электронная почта:</label>
+                        <input class="form_input" required placeholder="zhaba@mail.ru" type="email" name="email">
+                    </section>
+
+                    <!-- TELEPHONE NUMBER -->
+					<section class="form_item">
+						<label class="form_label">Ваш телефон:</label>
+						<input class="form_input" required placeholder="88005553535" minlength="11" maxlength="12" type="tel" name="email">
+					</section>
+
+                    <!-- BIRTHDAY -->
+					<section class = "form_item">
+						<label class="form_label">Введите дату вашего рождения</label>
+						<input class="form_input" required type="datetime-local" min="1940-01-01T00:00" max="2012-01-01T00:00">
+					</section>
+
+                    <!-- NICKNAME -->
+                    <section class="form_item">
+						<label class="form_label">Псевдоним на сайте:</label>
+						<input  class="form_input" required type="text" name="name" class = "form_input" required placeholder="FrogStar2003" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$">
+					</section>
+
+                    <!-- PASSWORD -->
+					<section class="form_item">
+						<label class="form_label">Придумайте пароль:</label>
+						<input class="form_input" required placeholder="Звезда" type="password">
+					</section>
+
+                    <!-- SELF DESCRIPTION -->
+					<section class="form_item">
+						<label for="formMessage" class="form_label">Опишите себя:</label>
+						<textarea name="message" id="formMessage" class="form_input"></textarea>
+					</section>
+
+                    <!-- PET FROG -->
+                    <section class="form_item">
+						<div class="form_label">У вас есть домашняя лягушка?</div>
+							<div class="options">
+								<div class="options_item">
+									<input id = "formYes" checked type="radio" value="yes" name="useful" class="options_input">
+									<label for="formYes" class="options_label"><span>Да</span></label>
+								</div>
+								<div class="options_item">
+									<input id = "formNo" type="radio" value="no" name="useful" class="options_input">
+									<label for="formNo" class="options_label"><span>Нет</span></label>
+								</div>
+						</div>
+					</section>
+
+                    <!-- FAVOURITE FROG -->
+                    <section class = "form_item">
+                        <label>Какой вид лягушек вам больше нравится??</label>
+                        <select required multiple size = "3" class="form_selected">
+                            <option value="1" selected = "selected">Остромордая</option>
+                            <option value="2" selected = "selected">Австралийская квакша</option>
+                            <option value="3" selected = "selected">Прудовая</option>
+                            <option value="4" selected = "selected">Доминиканская квакша</option>
+                            <option value="5" selected = "selected">Голубой древолаз</option>
+                        </select>
+                    </section>
+
+                    <!-- PERSONAL DATA PROCESSING -->
+					<section class = "form_item">
+						<div class="checkbox">
+							<input checked type="checkbox" required>
+							<label><span>Я даю свое согласие на обработку персональных данных</span></label>
+						</div>
+					</section>
+
+                    <!-- SUBMIT -->
+					<input type = "submit" class = "form_button"></input>
+				</fieldset>
+			</form>
+
+            <!-- Якорь наверх -->
+            <aside class="anchorTop">
+                <h2><a class="anchorTop-link" href="#">Наверх</a></h2>
+            </aside>
+        </main>
+
+        <!-- Подвал -->
+        <footer id="footerAnchor">
+            <!-- Контакты и ссылка на иконку -->
+            <section class="footerSection">
+                <h3 class="contacts" id="contacts">Контакты</h3>
+                <address>
+                    <p id="phoneNumber"><a class="footerSection-link" href="tel:+79506996439">Позвонить</a></p>
+                    <p id="mail"><a class="footerSection-link" href="mailto:gribchenko.2003@mail.ru">Написать на почту</a></p>
+                </address>
+            </section>
+            <section class="footerSection">
+                <h3 class="contacts">Важная информация</h3>
+                    <p>Сайт создал Грибченко А. Ю. - студент <abbr class="footerSection-abbr" title="Российский технологический университет Московский институт радиотехники электроники и автоматики."><b>РТУ МИРЭА</b></abbr></p>
+                    <p>Источник вдохновения - сказка <cite>"Царевна лягушка"</cite></p>
+                    <p><a class="footerSection-link" target="_blank" href="https://icons8.com/icon/5Lss2FosoQhJ/морда-лягушки">Иконка</a> взята <a class="footerSection-link" target="_blank" href="https://icons8.com">отсюда</a></p>
+            </section>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,173 @@
+/* MAIN ELEMENTS */
+
+html {
+    height: 100%;}
+
+body {
+    color: #3e3e3e;
+    font-family: 'Roboto', sans-serif;
+    line-height: 150%;
+    /* padding-top: 50px; */
+    background-color: #A9EF93;
+    margin: 0;
+}
+
+header {
+    margin: 15px 1%;
+    background-color: #90EF72;
+    position: sticky;
+    top: 0px;
+    /* width: 100%; */
+    box-shadow: 0 0 10px -5px black;
+    border-radius: 1em;
+}
+
+main {
+    padding: 1% 2.5%;
+    background-color: #C2F2B3;
+    text-align: justify;
+    margin: 0 20% 0  20%;
+    box-shadow: 0 0 10px -5px black;
+    min-height: 100vh;
+    border-radius: 1em;
+}
+
+.index2 {
+    /* background-color: #A9EF93; */
+}
+
+article > p {
+    text-indent: 30px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* IMAGES */
+
+.imageWrapper > img {
+    width: 90%;
+    height: auto;
+    border-radius: 30px;
+}
+
+.imageWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    padding-right: 10px;
+}
+
+/* HEADER */
+
+.headerMenu-wrapepr {
+    margin: 0;
+}
+
+.headerMenu {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.headerMenu-list {
+    position: relative;
+}
+
+.headerMenu-link:hover {
+    background-color: #68DE43;
+}
+
+.headerMenu-link:visited {
+    color: inherit;
+}
+
+.headerMenu-link {
+    color: inherit;
+    padding: 16px 25px;
+    display: block;
+    transition: background-color 0.25s linear;
+}
+
+/* CONTENT AND LINKS*/
+
+ .contentList-header{
+    margin: 0;
+}
+
+.contentList {
+    float: left;
+    margin: 0 15px 15px 0;
+}
+
+.contentList-link, .wikiLink, sup > a {
+    color: gray;
+}
+
+.contentList-link:hover, .wikiLink:hover, sup > a {
+    text-decoration: underline;
+}
+
+.contentList-link:active {
+    background-color: lightgray;
+}
+
+/* ANCHOR */
+
+.anchorTop {
+    position: fixed;
+    right: 15px;
+    bottom: 5px;
+    margin: 0;
+}
+
+.anchorTop-link {
+    color: #2E6D1A;
+}
+
+.anchorTop-link:hover {
+    text-decoration: underline;
+}
+
+/* FOOTER */
+
+footer {
+    color: #94D380;
+    display: flex;
+    background-color: #64A74F;
+    padding: 5px 20px 20px 20px;
+    justify-content: center;
+    box-shadow: inset 0px 5px 10px -7px black;
+    margin-top: 15px;
+}
+
+.contacts {
+    color: #A5D396;
+}
+
+.footerSection {
+    margin: 0 40px;
+}
+
+.footerSection-link {
+    text-decoration: underline;
+    color: inherit;
+    transition: background-color 0.25s linear;
+}
+
+.footerSection-link:hover {
+    background-color: #2E6D1A;
+}
+
+.footerSection-abbr {
+    text-decoration: none;
+}
+
+.footerSection-abbr:hover {
+    cursor: pointer;
+}
