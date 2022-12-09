@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Frog`s site</title>
+        <link rel="icon" type="image/png" href="img/frog-icon.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <!-- Шапка сайта -->
+        <header>
+            <nav class="headerMenu-wrapper">
+                <img class="logo-img" src="img/logo.png" alt="Логотип сайта">
+                <ul class="headerMenu">
+                    <input type="checkbox" id="checkbox_toggle">
+                    <label for="checkbox_toggle" class="hamburger"><span class="hamburger-line"></span></label>
+                    <div class="menu">
+                        <li><a class="headerButton" href="index.html">Главная</a></li>
+                        <li><a class="headerButton"  href="index2.html">Виды лягушек</a></li>
+                        <li><a class="headerButton"  href="index3.html">Галерея</a></li>
+                        <li>
+                            <label class="headerButton" for="checkbox_loggin">Личный кабинет</label>
+                            <input type="checkbox" id="checkbox_loggin">
+                            <section class="logginPage" >
+
+                                <div class="square1"></div>
+                                <div class="square2"></div>
+
+                                <form class="logginForm" method="post">
+                                    <section class="loginWrapepr">
+                                        <section class="mainWrapper">
+                                            <h2>Логин</h2>
+                                            <section>
+                                                <input type="text" required name="login" placeholder="Почта">
+                                            </section>
+                                            <section>
+                                                <input type="password" required name="password" placeholder="Пароль">
+                                            </section>
+                                            <section>
+                                                <input type="submit" name="submit" value="Войти">
+                                            </section>
+                                            <section>
+                                                <a class="logginLink1">Забыли пароль?</a>
+                                                <a class="logginLink2">Зарегистрироваться</a>
+                                                <a class="logginLink3">Особый вход</a>
+                                            </section>
+                                        </section>
+                                        <label class="loggin_return" for="checkbox_loggin">
+                                            <a>Вернуться назад</a>
+                                        </label>
+                                    </section>
+
+                                </form>
+                            </section>
+
+                        </li>
+                    </div>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Основной контент -->
+        <main class="index1Main">
+            <!-- Вступление -->
+            <article>
+                <h1 class="intrudutionHeader">Лягушки</h1><hr>
+                <p><strong><i>Лягушки</i></strong> — общеупотребительное название группы животных из отряда бесхвостых земноводных.<sup><a href="#termA">[a]</a></sup> В широком смысле термин <i>«лягушка»</i> относится ко всем представителям отряда бесхвостых. В узком смысле это название применяется по отношению к представителям семейства настоящих лягушек. Личинки лягушек называются головастиками.
+                Лягушки распространены по всему земному шару — от тропиков до субарктических регионов; наибольшее разнообразие сосредоточено во влажных тропических лесах</p>
+            </article>
+
+            <!-- Содержание -->
+            <aside class="contentList">
+                <h4 class="contentList-header">Содержание</h4>
+                <ol type="1">
+                    <li><a class="contentList-link" href="#area">Ареал</a></li>
+                    <li><a class="contentList-link" href="#classification">Классификация</a></li>
+                    <li><a class="contentList-link" href="#poem">Стихотворение</a></li>
+                    <li><a class="contentList-link" href="#image">Изображение лягушки</a></li>
+                    <li><a class="contentList-link" href="#contacts">Контакты автора</a></li>
+                        <ul type="square">
+                            <li><a class="contentList-link" href="#phoneNumber">Номер телефона</a></li>
+                            <li><a class="contentList-link" href="#mail">Почта</a></li>
+                        </ul>
+                </ol>
+            </aside>
+
+            <!-- Ареал -->
+            <article>
+                <h2 id="area">Ареал</h2>
+                <p><b><i>Лягушки</i></b> распространены практически на всей суше. Исключения составляют большие песчаные пустыни Сахара и Руб-Эль-Хали, наиболее холодные области — Гренландия, Таймыр и другие высокоширотные районы Арктики, Антарктида, а также некоторые острова, удалённые от континентов. Кроме того, естественный ареал лягушек не включал южный остров Новой Зеландии, но после нескольких попыток искусственного внедрения по крайней мере два вида (<i>Litoria raniformis и Litoria ewingii</i>) основали на нём устойчивые популяции. Многие виды имеют ограниченное распространение из-за климатических или географических барьеров, например, проливов, горных хребтов, пустынь; популяции могут быть изолированы также из-за препятствий, созданных человеком, — автотрасс, лесных просек и т. п. В тропических регионах видовое разнообразие, как правило, выше, чем в районах с умеренным климатом. Некоторые виды лягушек адаптированы для выживания в негостеприимных условиях, например, в пустынях или в холодном климате. Так, <i>Rana sylvatica</i>, чей ареал частично лежит за северным полярным кругом, на зиму закапывается в землю. Несмотря на глубокое промерзание почвы, высокая концентрация глюкозы в тканях позволяет этой лягушке пережить зиму в состоянии анабиоза.<sup><a href="#termB">[b]</a></sup></p>
+            </article>
+
+            <!-- Классификация -->
+            <article>
+                <h2 id="classification">Классификация</h2>
+                <p>Все лягушки относятся к отряду бесхвостых земноводных. Морфологические характеристики взрослой лягушки включают в себя, среди прочего, 9 или менее предтазовых позвонков, длинную, направленную вперёд подвздошную кость, наличие уростиля и отсутствие хвоста, укороченные по сравнению с задними передние конечности, спаянные вместе локтевую и лучевую кости передних конечностей, а также большеберцовую и малоберцовую кости задних конечностей, удлинённую лодыжку, беззубую нижнюю челюсть и подкожные лимфатические пространства, расположенные между кожей и мышечным слоем. Личинки лягушек (головастики) имеют одно центральное дыхательное отверстие (брызгальце) и ротовые воронки, снабжённые кератиновыми зубчиками. Некоторые виды лягушек формируют межвидовые гибриды.<sup><a href="#termC">[c]</a></sup> Так, например, съедобная лягушка представляет собой естественный гибрид прудовой (<i>Pelophylax lessonae</i>) и озёрной (<i>P. ridibundus</i>) лягушек.</p>
+            </article>
+
+            <!-- Виды лягушек -->
+            <article>
+                <h3>Виды лягушек</h3>
+                <dl>
+                <dt><u><em>Доминиканская квакша</em></u></dt>
+                <dd>Если впервые наблюдать за передвижением такого существа, наверняка, возникнет мнение о его неуклюжести. И оно абсолютно обосновано. Эта лягушка действительно двигается достаточно проблематично.</dd>
+                <dt><u><em>Прудовая лягушка</em></u></dt>
+                <dd>Исходя из названия, нетрудно определить, что местом обитания этого существа являются водоемы.</dd>
+                <dt><u><em>Австралийская квакша</em></u></dt>
+                <dd>По габаритам, австралийская квакша не уступает доминиканской, однако, своим видом, она излучает дружелюбие, в отличие от первой.</dd>
+                <dt><u><em>Голубой древолаз</em></u></dt>
+                <dd>На самом деле, голубой древолаз, сам по себе, яркий и контрастный. По всей его скользкой коже находятся черные круги. Кстати, голубой древолаз – лягушка ядовитая. Химическая формула его яда: C<sub>31</sub>H<sub>42</sub>N<sub>2</sub>O<sub>6</sub></dd>
+                <dt><u><em>Остромордая лягушка</em></u></dt>
+                <dd>Особенность этого скользкого существа – заостренная мордашка. Это небольшая особь, длиной до 6-7 см. По всей её коже есть пятна и полосы.</dd>
+                </dl>
+                <p>Вышеизложенная информация была взята с сайта <a class="wikiLink" href="https://ru.wikipedia.org/wiki/Лягушки" target="_blank">википедии.</a></p>
+            </article>
+
+            <!-- Карта изображения с ляшушками -->
+            <div class="imageWrapper">
+                <img src="img/frogTypes.jpg" alt="Виды лягушек" width="800px" height="500px" usemap="#frogMap">
+                <map name="frogMap">
+                    <area shape="circle" coords="380 210 110" href="index2.html#frog2-2" alt="Австралийская квакша">
+                    <area shape="rect" coords="0, 0, 250, 210" href="index2.html#frog2-1" alt="Остромордая лягушка">
+                    <area shape="rect" coords="500, 260, 800, 500" href="index2.html#frog2-4" target="_blank" alt="Доминиканская квакша">
+                    <area shape="poly" coords="17, 430, 180, 280, 240, 280, 220, 460, 17, 470" href="index2.html#frog2-5" alt="Голубой древолаз">
+                    <area shape="poly" coords="550, 20, 570, 20, 770, 120, 770, 190, 650, 200" href="index2.html#frog2-3" alt="Прудовая лягушка">
+                </map>
+            </div>
+
+            <!-- Стихотворение -->
+            <article>
+                <h2 id="poem">Стихотворение</h2>
+                <h3>Лягушонок (В. Бахревский)</h3>
+                <pre>
+        Закрывай, лягушонок, рот -
+            Старый рак стоит у ворот.
+        Кто не спит,
+            Кто шумит.
+        Кто шалит -
+            Он того клешнёй ущемит.
+        Закрывай, лягушонок, глаза,
+            И к тебе прилетит стрекоза.
+        Прилетит стрекоза-вертолёт
+            И возьмёт лягушонка в полёт.
+        Рак тебя не достанет,
+            Цапля тебя не догонит,
+        В небе много светлых комариков.
+            Бре-ке-ке-ке!..</pre>
+            </article>
+
+            <!-- Цитаты -->
+            <article>
+                <h2>Цитаты про лягушек</h2>
+                <blockquote cite="https://ru.citaty.net/temy/liagushka/">
+                <dl>
+                    <dt>„Когда засасывает болото, со временем начинает казаться, что уровень развития лягушек поднимается до твоего.“</dt>
+                    <dd><cite>—  Андрей Гарольдович Кнышев писатель-сатирик 1956</cite></dd>
+                    <dt>„Если с утра съесть лягушку, остаток дня обещает быть чудесным, поскольку худшее на сегодня уже позади.“</dt>
+                    <dd><cite>—  Марк Твен американский писатель, журналист и общественный деятель 1835 - 1910</cite></dd>
+                </dl>
+                </blockquote>
+            </article>
+
+            <!-- Изображение лягушки -->
+            <article>
+                <h2 id="image">Изображение лягушки</h2>
+                <a href="https://yandex.ru/images/search?text=лягушка%20картинки&from=tabbar" target="_blank">
+                    <div class="imageWrapper">
+                        <img src="img/frog.jpg" alt="Тут должна была быть лягушка">
+                    </div>
+                </a>
+            </article>
+
+            <!-- Список терминов -->
+            <article>
+                <h3>Список терминов:</h3>
+                <ol type="a">
+                    <li id="termA"><b>Земново́дные</b>, или <b>амфи́бии</b> (лат. Amphibia), — класс позвоночных четвероногих животных, в числе прочих включающий тритонов, саламандр, лягушек и червяг — всего примерно 8 487 современных вида, из которых почти 90% составляют лягушки, что делает этот класс сравнительно немногочисленным.</li>
+                    <li id="termB"><b>Анабио́з</b> — временное замедление или прекращение жизненных процессов в организме под воздействием внешних или внутренних факторов.</li>
+                    <li id="termC"><b>Гибри́д</b> — организм или клетка, полученные вследствие скрещивания генетически различающихся форм.</li>
+                </ol>
+            </article>
+
+            <section>
+                <div class="likeButton" style="background-color: green"><div class="likeButton-content">325</div></div>
+            </section>
+        </main>
+
+        <!-- Подвал -->
+        <footer>
+            <section class="footer_container">
+                <section class="about_us">
+                    <h2>О нас</h2>
+                    <p>ipsum dolor sit amet consectetur adipisicing elit. Atque, ad laboriosam odit vitae
+                    aut reprehenderit. Placeat nemo dolore nulla maiores mollitia aliquam
+                    consectetur suscipit nihil recusandae, optio aliquid sunt non.</p>
+                    <ul class="socialNetwork">
+                        <li><a href="gradient_cards.html" class="vk-link"><img src="img/icons/vk.png" alt="vk"></a></li>
+                        <li><a href="gradient_cards.html" class="wu-link"><img src="img/icons/fb.png" alt="fb"></a></li>
+                        <li><a href="gradient_cards.html" class="yt-link"><img src="img/icons/yt.png" alt="yt"></a></li>
+                        <li><a href="gradient_cards.html" class="tg-link"><img src="img/icons/tg.png" alt="tg"></a></li>
+                        <li><a href="gradient_cards.html" class="inst-link"><img src="img/icons/inst.png" alt="inst"></a></li>
+                    </ul>
+                </section>
+                <section class="quicklinks">
+                    <h2>Ссылки</h2>
+                    <ul>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Вопросы</a></li>
+                        <li><a href="#">Политика конфиденциальности</a></li>
+                        <li><a href="#">Помощь</a></li>
+                        <li><a href="#">Правила и условия</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </section>
+                <section class="quicklinks">
+                    <h2>Магазин</h2>
+                    <ul>
+                        <li><a href="#">Мужское</a></li>
+                        <li><a href="#">Женское</a></li>
+                        <li><a href="#">Детское</a></li>
+                        <li><a href="#">Обувь</a></li>
+                        <li><a href="#">Вещи</a></li>
+                    </ul>
+                </section>
+                <section class="contact">
+                    <h2>Контакты</h2>
+                    <ul class="info">
+                        <li>
+                            <span><img src="img/icons/location.png" alt="loc"></span>
+                            <span>д. 36<br>ул. 11-я Парковая<br>г. Москва<br>Россия</span>
+                        </li>
+                        <li>
+                            <span><img src="img/icons/telephone.png" alt="loc"></span>
+                            <p id="phoneNumber"><a href="tel:+79506996439">Позвонить</a></p>
+                        </li>
+                        <li>
+                            <span><img src="img/icons/mail.png" alt="loc"></span>
+                            <p id="mail"><a href="mailto:gribchenko.2003@mail.ru">Написать на почту</a></p>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+        </footer>
+        <section class="copyright_text">
+            <span>Copyright © 2022 Student MIREA. All Right Reserved.</span>
+        </section>
+        <script src="script.js">
+
+        </script>
+    </body>
+</html>

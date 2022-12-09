@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Личный кабинет</title>
+        <link rel="icon" type="image/png" href="img/frog-icon.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- Шапка сайта -->
+        <header>
+            <nav class="headerMenu-wrapper">
+                <img class="logo-img" src="img/logo.png" alt="Логотип сайта">
+                <ul class="headerMenu">
+                    <input type="checkbox" id="checkbox_toggle">
+                    <label for="checkbox_toggle" class="hamburger"><span class="hamburger-line"></span></label>
+                    <div class="menu">
+                        <li><a class="headerButton" href="index.html">Главная</a></li>
+                        <li><a class="headerButton"  href="index2.html">Виды лягушек</a></li>
+                        <li><a class="headerButton"  href="index3.html">Галерея</a></li>
+                        <li>
+                            <label class="headerButton" for="checkbox_loggin">Личный кабинет</label>
+                            <input type="checkbox" id="checkbox_loggin">
+                            <section class="logginPage" >
+
+                                <div class="square1"></div>
+                                <div class="square2"></div>
+
+                                <form class="logginForm" method="post">
+                                    <section class="loginWrapepr">
+                                        <section class="mainWrapper">
+                                            <h2>Логин</h2>
+                                            <section>
+                                                <input type="text" required name="login" placeholder="Почта">
+                                            </section>
+                                            <section>
+                                                <input type="password" required name="password" placeholder="Пароль">
+                                            </section>
+                                            <section>
+                                                <input type="submit" name="submit" value="Войти">
+                                            </section>
+                                            <section>
+                                                <a class="logginLink1">Забыли пароль?</a>
+                                                <a class="logginLink2">Зарегистрироваться</a>
+                                                <a class="logginLink3">Особый вход</a>
+                                            </section>
+                                        </section>
+                                        <label class="loggin_return" for="checkbox_loggin">
+                                            <a>Вернуться назад</a>
+                                        </label>
+                                    </section>
+
+                                </form>
+                            </section>
+
+                        </li>
+                    </div>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Основной контент-->
+        <main class="index4Main">
+
+            <form class = "form_body" method="get">
+				<fieldset>
+					<legend class = "form_title">Регистрация</legend>
+
+                    <!-- AVATART -->
+                    <section class="userAvatar">
+                        <div class="userAvatar-wrapper">
+                            <img class="avatar" src="img/no_image.jpg" alt="no image">
+                            <label class="loadAvatar">
+                                <p>Выбрать фото</p>
+                                <input class="fileInput" type="file" name="userPhoto">
+                            </label>
+                        </div>
+                    </section>
+
+                    <section class="form-grid-box">
+
+                        <!-- NAME -->
+    					<section class="form_item">
+    						<label class="form_label">ФИО:</label>
+    						<input class="form_input" required placeholder="Сидоров Сидр Сидорович" type="text" name="name">
+    					</section>
+
+                        <!-- EMAIL -->
+                        <section class="form_item">
+                            <label class="form_label">Электронная почта:</label>
+                            <input class="form_input" required placeholder="zhaba@mail.ru" type="email" name="email">
+                        </section>
+
+                        <!-- TELEPHONE NUMBER -->
+    					<section class="form_item">
+    						<label class="form_label">Телефон:</label>
+    						<input class="form_input" required placeholder="88005553535" minlength="11" maxlength="12" type="tel" name="email">
+    					</section>
+
+                        <!-- PASSWORD -->
+    					<section class="form_item">
+    						<label class="form_label">Пароль:</label>
+    						<input class="form_input" required placeholder="Звезда" type="password">
+    					</section>
+
+                        <!-- SUBMIT -->
+                        <input type = "submit" class = "form_button"></input>
+                    </section>
+
+				</fieldset>
+			</form>
+        </main>
+
+        <!-- Подвал -->
+        <footer>
+            <section class="footer_container">
+                <section class="about_us">
+                    <h2>О нас</h2>
+                    <p>ipsum dolor sit amet consectetur adipisicing elit. Atque, ad laboriosam odit vitae
+                    aut reprehenderit. Placeat nemo dolore nulla maiores mollitia aliquam
+                    consectetur suscipit nihil recusandae, optio aliquid sunt non.</p>
+                    <ul class="socialNetwork">
+                        <li><a href="gradient_cards.html" class="vk-link"><img src="img/icons/vk.png" alt="vk"></a></li>
+                        <li><a href="gradient_cards.html" class="wu-link"><img src="img/icons/fb.png" alt="fb"></a></li>
+                        <li><a href="gradient_cards.html" class="yt-link"><img src="img/icons/yt.png" alt="yt"></a></li>
+                        <li><a href="gradient_cards.html" class="tg-link"><img src="img/icons/tg.png" alt="tg"></a></li>
+                        <li><a href="gradient_cards.html" class="inst-link"><img src="img/icons/inst.png" alt="inst"></a></li>
+                    </ul>
+                </section>
+                <section class="quicklinks">
+                    <h2>Ссылки</h2>
+                    <ul>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Вопросы</a></li>
+                        <li><a href="#">Политика конфиденциальности</a></li>
+                        <li><a href="#">Помощь</a></li>
+                        <li><a href="#">Правила и условия</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </section>
+                <section class="quicklinks">
+                    <h2>Магазин</h2>
+                    <ul>
+                        <li><a href="#">Мужское</a></li>
+                        <li><a href="#">Женское</a></li>
+                        <li><a href="#">Детское</a></li>
+                        <li><a href="#">Обувь</a></li>
+                        <li><a href="#">Вещи</a></li>
+                    </ul>
+                </section>
+                <section class="contact">
+                    <h2>Контакты</h2>
+                    <ul class="info">
+                        <li>
+                            <span><img src="img/icons/location.png" alt="loc"></span>
+                            <span>д. 36<br>ул. 11-я Парковая<br>г. Москва<br>Россия</span>
+                        </li>
+                        <li>
+                            <span><img src="img/icons/telephone.png" alt="loc"></span>
+                            <p id="phoneNumber"><a href="tel:+79506996439">Позвонить</a></p>
+                        </li>
+                        <li>
+                            <span><img src="img/icons/mail.png" alt="loc"></span>
+                            <p id="mail"><a href="mailto:gribchenko.2003@mail.ru">Написать на почту</a></p>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+        </footer>
+        <section class="copyright_text">
+            <span>Copyright © 2022 Student MIREA. All Right Reserved.</span>
+        </section>
+    </body>
+</html>
