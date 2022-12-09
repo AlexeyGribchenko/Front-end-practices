@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Reurn of the frogs</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="link-wrapper" id="contents">
+            <a href="https://ru.wikipedia.org/wiki/Лягушки">Wikipedia</a>
+            <a href="https://www.google.ru">Google</a>
+            <a href="https://ya.ru"><i>Яндекс</i></a>
+            <a href="index.html">Я тоже ссылка</a>
+            <div class="aaa">
+                А я не ссылка
+            </div>
+        </div>
+        <div class="image-wrapepr">
+            <div class="main-image">
+                <img src="frog_1.jpg">
+            </div>
+            <div class="small-images">
+                <img src="frog_2.jpg">
+                <img src="frog_3.jpg">
+                <img src="frog_4.jpg">
+                <img src="frog_5.jpg">
+            </div>
+        </div>
+
+        <div class="list-wrapper">
+            <ul>
+                <li><img class="dark" src="frog_1.jpg"></li>
+                <li><img class="dark" src="frog_2.jpg"></li>
+                <li><img class="dark" src="frog_3.jpg"></li>
+                <li><img class="dark" src="frog_4.jpg"></li>
+            </ul>
+        </div>
+
+        <div class="slider-wrapper">
+            <div class="slider-line">
+                <div class="slider-button"></div>
+            </div>
+        </div>
+
+        <div class="stone-wrapper">
+            <img class="droppable" src="stone.png">
+            <img class="draggable" src="f1.png" data-amount="1">
+            <img class="draggable" src="f2.png" data-amount="1">
+            <img class="draggable" src="f3.png" data-amount="1">
+            <img class="draggable" src="f4.png" data-amount="2">
+        </div>
+        <div class="amount">
+            <span>Лягушек на камне: </span><span class="number-of-frogs">0 шт.</span>
+        </div>
+
+        <div class="animations-wrapper">
+            <button class="return-btn-frog" type="button">Вернуть лягушку</button>
+            <div class="jumping-frog">
+                <img src="f2.png">
+            </div>
+            <div class="caterpillar">
+                <button class="return-btn-caterpillar" type="button">Вернуть гученИчку</button>
+                <img src="f1.png">
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Практика 10</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <main>
+            <div class="cart big-cart">
+                <section class="cart-header">
+                    <img src="cart.png" alt="cart" class="img-button">
+                </section>
+            </div>
+            <div class="top-wrapper">
+                <section class="capcha-wrapper">
+                    <form class="" action="index.html">
+                        <div class="text-card">
+                            <span class="capcha"></span>
+                            <input type="text" class="capcha-input" placeholder="Введите капчу">
+                            <button type="button" class="btn4">Ввод</button>
+                        </div>
+                        <button class="submit-capha" type="submit" disabled="true">Отправить</button>
+                    </form>
+                </section>
+                <section class="accumulator-wrapper">
+                    <div class="text-card">
+                        <span class="accumulator-text"></span>
+                    </div>
+                    <button type="button" class="btn5">Ввести новое значение</button>
+                </section>
+                <section class="text-card-wrapper">
+                    <div class="text-card">
+                        <span class="text">Некоторая строка. Довольно длинная строка.</span>
+                    </div>
+                    <button type="button" class="btn1">Исходное состояние</button>
+                    <button type="button" class="btn2">truncate(10)</button>
+                    <button type="button" class="btn3">truncate(20)</button>
+                </section>
+            </div>
+            <div class="bottom-wrapper">
+                <div class="products">
+                    <img src="cup.png" alt="cup">
+                    <p>Чашка</p>
+                    <div class="input-wrapper">
+                        <input class="cup" type="text" placeholder="0">
+                        <button type="button" name="cup">
+                            <img src="cart.png" alt="cart">
+                        </button>
+                    </div>
+                </div>
+
+                <div class="products">
+                    <img src="plate.png" alt="cup">
+                    <p>Тарелка</p>
+                    <div class="input-wrapper">
+                        <input class="plate" type="text" placeholder="0">
+                        <button type="button" name="plate">
+                            <img src="cart.png" alt="cart">
+                        </button>
+                    </div>
+                </div>
+
+                <div class="products">
+                    <img src="tank.png" alt="cup">
+                    <p>Лягушка в танке</p>
+                    <div class="input-wrapper">
+                        <input class="tank" type="text" placeholder="0">
+                        <button type="button" name="tank">
+                            <img src="cart.png" alt="cart">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>
